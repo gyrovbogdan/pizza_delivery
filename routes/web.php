@@ -1,7 +1,6 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,6 +12,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::namespace('App\Http\Controllers')->group(
+    function () {
+        Route::get('/', 'HomeController@index');
+        Route::get('/newProducts', 'HomeController@newProducts');
+        Route::get('/delivery', 'HomeController@delivery');
+        Route::get('/sertificate', 'HomeController@certificate');
+        Route::get('/search', 'HomeController@search');
+    }
+);
