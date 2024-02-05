@@ -28,7 +28,7 @@ body {
 .wrapper .top_navbar .hamburger {
     width: 70px;
     height: 100%;
-    background: #ff3662;
+    background: #ff3a08;
     padding: 15px 17px;
     border-top-left-radius: 20px;
     cursor: pointer;
@@ -55,7 +55,7 @@ body {
 }
 
 .wrapper .top_navbar .top_menu .logo {
-    color: #ff3662;
+    color: #ff3a08;
     font-size: 20px;
     font-weight: 700;
     letter-spacing: 3px;
@@ -72,13 +72,13 @@ body {
     height: 35px;
     line-height: 35px;
     text-align: center;
-    border: 1px solid #ff3662;
+    border: 1px solid #ff3a08;
     border-radius: 50%;
-    color: #ff3662;
+    color: #ff3a08;
 }
 
 .wrapper .top_navbar .top_menu ul li a:hover {
-    background: #ff476f;
+    background: #ff491b;
     color: #fff;
 }
 
@@ -90,7 +90,7 @@ body {
     position: fixed;
     top: 70px;
     left: 10px;
-    background: #ff3662;
+    background: #ff3a08;
     width: 200px;
     height: calc(100% - 80px);
     border-bottom-left-radius: 20px;
@@ -130,7 +130,7 @@ body {
 
 .wrapper .sidebar ul li a:hover,
 .wrapper .sidebar ul li a.active {
-    background: #ff476f;
+    background: #ff491b;
     color: #fff;
 }
 
@@ -254,7 +254,7 @@ body {
     right: 16px;
     display: flex;
     align-items: center;
-    background: #ff476f;
+    background: #ff491b;
     color: white;
     padding: 8px 10px;
     border-radius: 50px;
