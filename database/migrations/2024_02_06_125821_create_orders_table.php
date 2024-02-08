@@ -18,7 +18,6 @@ return new class extends Migration
             $table->dateTime('accepted_at')->nullable();
             $table->dateTime('delivered_at')->nullable();
             $table->string('note')->nullable();
-
             $table->timestamps();
         });
     }

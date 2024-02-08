@@ -19,5 +19,6 @@ Route::namespace('App\Http\Controllers')->group(
         Route::get('/delivery', 'HomeController@delivery');
         Route::get('/sertificate', 'HomeController@certificate');
         Route::get('/search', 'HomeController@search');
+        Route::get('/dish/{id}', 'DishController@show');
     }
 );

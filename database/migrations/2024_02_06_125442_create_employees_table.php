@@ -2,6 +2,7 @@
 
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Schema;
 
 return new class extends Migration
@@ -13,15 +14,14 @@ return new class extends Migration
     {
         Schema::create('employees', function (Blueprint $table) {
             $table->id();
-            $table->string('phone_number', 11);
+            $table->string('phone_number');
             $table->string('name');
             $table->string('email');
             $table->string('password');
             $table->string('note')->nullable();
             $table->string('role');
-            $table->date('hired_on');
+            $table->date('hired_on')->default(DB::raw('CURRENT_TIMESTAMP'));
             $table->timestamps();
-
             $table->unique(['phone_number']);
             $table->unique(['email']);
         });

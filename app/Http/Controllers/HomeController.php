@@ -2,12 +2,13 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Dish;
 
 class HomeController extends Controller
 {
     public function index()
     {
-        return view('index.index');
+        return view('index.index', ['dishes' => Dish::all()]);
     }
 
     public function newProducts()
