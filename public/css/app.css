@@ -291,3 +291,11 @@ body {
             0.15s 0.1s cubic-bezier(0.175, 0.885, 0.32, 1.275) transform;
     }
 }
+
+.a-box {
+    color: black;
+}
+
+.a-box:hover {
+    color: #ff491b;
+}

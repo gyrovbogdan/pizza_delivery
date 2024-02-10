@@ -1,5 +1,5 @@
 <div class="item">
-    <div class="box">
+    <a class="box a-box" href='{{ action('App\Http\Controllers\DishController@show', $id) }}'>
         <div class="box-icon"><i class="fa-solid fa-circle-half-stroke"></i></div>
         <div class="box-label">{{ $name }}</div>
         <div class="box-title">{{ $diametr }}</div>
@@ -14,5 +14,5 @@
                 Добавить в корзину
             </div>
         </div>
-    </div>
+    </a>
 </div>

@@ -22,6 +22,7 @@ class EmployeeFactory extends Factory
             'name' => fake()->name(),
             'email' => fake()->email(),
             'password' => '12345678',
+            'hired_on' => fake()->date(),
             'role' => $roles[array_rand($roles)]
         ];
     }
